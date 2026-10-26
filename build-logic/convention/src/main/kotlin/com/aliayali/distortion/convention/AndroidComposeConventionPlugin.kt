@@ -1,4 +1,4 @@
-package com.aliayali.vulnora.convention
+package com.aliayali.distortion.convention
 
 import com.android.build.api.dsl.ApplicationExtension
 import org.gradle.api.Plugin
