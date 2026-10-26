@@ -10,16 +10,16 @@ android {
 
     defaultConfig {
         applicationId = "com.aliayali.distortion"
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "0.3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
-            isShrinkResources = false
+            isMinifyEnabled = true
+            isShrinkResources = true
         }
     }
 
@@ -35,9 +35,11 @@ dependencies {
 //    implementation(projects.core.network)
     implementation(projects.core.navigation)
     implementation(projects.feature.home)
+    implementation(projects.feature.game)
 
     coreLibraryDesugaring(libs.android.desugar.jdk.libs)
 
+    implementation(libs.androidx.core.splashscreen)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)

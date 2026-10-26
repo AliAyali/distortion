@@ -17,6 +17,7 @@ android {
 dependencies {
 //    implementation(projects.core.model)
 //    implementation(projects.core.domain)
+    implementation(projects.feature.game)
 
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)

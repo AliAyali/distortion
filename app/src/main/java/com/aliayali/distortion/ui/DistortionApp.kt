@@ -13,6 +13,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.ui.NavDisplay
+import com.aliayali.game.navigation.gameEntry
 import com.aliayali.home.navigation.homeEntry
 import com.aliayali.navigation.Navigator
 import com.aliayali.navigation.toEntries
@@ -28,6 +29,7 @@ fun DistortionApp(
 
     val appEntryProvider = entryProvider {
         homeEntry(navigator)
+        gameEntry(navigator)
     }
 
     Scaffold(
