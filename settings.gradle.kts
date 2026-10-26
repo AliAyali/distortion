@@ -28,3 +28,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "distortion"
 include(":app")
+include(":core:designsystem")
