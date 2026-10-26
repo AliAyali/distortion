@@ -33,8 +33,8 @@ dependencies {
     implementation(projects.core.designsystem)
 //    implementation(projects.core.scanner)
 //    implementation(projects.core.network)
-//    implementation(projects.core.navigation)
-//    implementation(projects.feature.home)
+    implementation(projects.core.navigation)
+    implementation(projects.feature.home)
 
     coreLibraryDesugaring(libs.android.desugar.jdk.libs)
 

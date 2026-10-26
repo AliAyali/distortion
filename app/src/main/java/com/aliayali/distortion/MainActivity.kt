@@ -5,6 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.aliayali.designsystem.theme.DistortionTheme
+import com.aliayali.distortion.ui.DistortionApp
+import com.aliayali.distortion.ui.rememberDistortionAppState
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +14,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             DistortionTheme {
-
+                val appState = rememberDistortionAppState()
+                DistortionApp(appState = appState)
             }
         }
     }
