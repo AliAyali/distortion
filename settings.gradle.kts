@@ -1,4 +1,6 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         maven { url = uri("https://maven.myket.ir/") }
         google {
@@ -26,3 +28,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "distortion"
 include(":app")
+include(":core:designsystem")
+include(":core:navigation")
+include(":feature:home")
+include(":feature:game")
